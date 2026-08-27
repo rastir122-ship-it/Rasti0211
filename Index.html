@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Rasti</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7f6;
+            color: #18352d;
+            line-height: 1.7;
+        }
+
+        header {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #dceee7, #ffffff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 8%;
+        }
+
+        .container {
+            max-width: 1050px;
+            width: 100%;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .label {
+            color: #4b7c6d;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: clamp(50px, 8vw, 85px);
+            line-height: 1;
+            margin: 20px 0;
+        }
+
+        h1 span {
+            color: #4b7c6d;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #60716b;
+            max-width: 600px;
+        }
+
+        .foto {
+            width: 300px;
+            height: 370px;
+            margin: auto;
+            border-radius: 30px;
+            background: #c7ded5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 25px;
+            box-shadow: 0 20px 50px rgba(24, 53, 45, 0.15);
+            font-weight: bold;
+            color: #31594d;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 22px;
+            background: #18352d;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+        }
+
+        section {
+            padding: 85px 8%;
+        }
+
+        .judul {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .judul h2 {
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
+
+        .judul p {
+            color: #71817b;
+        }
+
+        .card {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 25px;
+            box-shadow: 0 12px 35px rgba(24, 53, 45, 0.08);
+        }
+
+        .data {
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            gap: 12px;
+        }
+
+        .timeline {
+            border-left: 3px solid #4b7c6d;
+            padding-left: 25px;
+        }
+
+        .timeline article {
+            margin-bottom: 30px;
+        }
+
+        .timeline strong {
+            color: #4b7c6d;
+        }
+
+        .kontak {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .kontak a {
+            padding: 18px;
+            background: white;
+            border-radius: 15px;
+            text-decoration: none;
+            color: #18352d;
+            box-shadow: 0 8px 25px rgba(24, 53, 45, 0.07);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #18352d;
+            color: white;
+        }
+
+        @media (max-width: 750px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .foto {
+                width: 260px;
+                height: 320px;
+            }
+
+            .data,
+            .kontak {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container hero">
+        <div>
+            <div class="label">Personal Portfolio</div>
+
+            <h1>Halo, saya <span>Rasti.</span></h1>
+
+            <p>
+                Saya adalah siswa SMKN 1 Semparuk jurusan
+                Rekayasa Perangkat Lunak (RPL). Saya tertarik
+                untuk terus belajar teknologi, mengembangkan
+                kemampuan, dan mendapatkan pengalaman baru.
+            </p>
+
+            <a href="#tentang" class="btn">Kenali Saya</a>
+        </div>
+
+        <div class="foto">
+            FOTO DIRI RASTI<br><br>
+            Ganti bagian ini dengan foto asli kamu.
+        </div>
+    </div>
+</header>
+
+<section id="tentang">
+    <div class="judul">
+        <h2>Tentang Saya</h2>
+        <p>Profil singkat</p>
+    </div>
+
+    <div class="card">
+        <div class="data">
+            <b>Nama</b>
+            <span>Rasti</span>
+
+            <b>Sekolah</b>
+            <span>SMKN 1 Semparuk</span>
+
+            <b>Jurusan</b>
+            <span>Rekayasa Perangkat Lunak (RPL)</span>
+
+            <b>Alamat</b>
+            <span>Kalimantan Barat, Kabupaten Sambas, Kecamatan Semparuk, Desa Sepadu</span>
+
+            <b>Minat</b>
+            <span>Teknologi, pemrograman, belajar hal baru, dan pengembangan diri</span>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="judul">
+        <h2>Pengalaman</h2>
+        <p>Perjalanan organisasi</p>
+    </div>
+
+    <div class="card timeline">
+        <article>
+            <strong>Organisasi Siswa Intra Sekolah</strong>
+            <h3>Bendahara OSIS</h3>
+            <p>
+                Pernah menjabat sebagai bendahara OSIS dan
+                bertanggung jawab dalam membantu pengelolaan
+                administrasi serta keuangan organisasi.
+            </p>
+        </article>
+
+        <article>
+            <strong>Pendidikan</strong>
+            <h3>SMKN 1 Semparuk — Jurusan RPL</h3>
+            <p>
+                Mempelajari dasar-dasar pengembangan perangkat
+                lunak, pemrograman, dan teknologi informasi.
+            </p>
+        </article>
+    </div>
+</section>
+
+<section>
+    <div class="judul">
+        <h2>Harapan</h2>
+        <p>Cita-cita dan pengembangan diri</p>
+    </div>
+
+    <div class="card">
+        <p>
+            Saya berharap dapat terus meningkatkan kemampuan
+            di bidang teknologi dan pemrograman. Saya ingin
+            mendapatkan pengalaman sebanyak mungkin, menjadi
+            pribadi yang bertanggung jawab, serta menggunakan
+            ilmu yang saya pelajari untuk membuat sesuatu yang
+            bermanfaat bagi orang lain.
+        </p>
+    </div>
+</section>
+
+<section id="kontak">
+    <div class="judul">
+        <h2>Kontak</h2>
+        <p>Hubungi saya</p>
+    </div>
+
+    <div class="kontak">
+        <a href="https://wa.me/6285820464634" target="_blank">
+            <b>WhatsApp</b><br>
+            085820464634
+        </a>
+
+        <a href="https://instagram.com/rasti0211" target="_blank">
+            <b>Instagram</b><br>
+            @rasti0211
+        </a>
+
+        <a href="https://tiktok.com/@rasti" target="_blank">
+            <b>TikTok</b><br>
+            @rasti
+        </a>
+
+        <a href="mailto:rastir122@gmail.com">
+            <b>Email</b><br>
+            rastir122@gmail.com
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Rasti — Siswa SMKN 1 Semparuk | RPL
+</footer>
+
+</body>
+</html>
